@@ -1,0 +1,33 @@
+.my {
+	&-flex {
+		display: flex;
+	}
+}
+.btn {
+	&-primary {
+		font-size: 18px;
+		&:hover,&:focus
+		{
+			background: #079fd1;
+		}
+	}
+	&-danger {
+		font-size: 18px;
+		background: #d92528;
+		border-color: #d92528;
+		padding: 15px 25px;
+	}
+}
+.ghost {
+	&-primary {
+		background: rgba(0,0,0,.3);
+		color: #079fd1;
+		padding: 15px 25px;
+	}
+	&-danger {
+		background: 0 0;
+		color: #d92528;
+		padding: 15px 25px;
+		border-color: #d92528;
+	}
+}
