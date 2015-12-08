@@ -143,5 +143,122 @@
 				margin-top: 50px;
 			}
 		}
+		&-5 {
+			padding: 60px 0;
+			background: #000;
+			color: #fff;
+			h2 {
+				font-size: 32px;
+				margin-bottom: 60px;
+			}
+		}
+		&-6 {
+			padding: 60px 0;
+			h2 {
+				font-size: 32px;
+				margin-bottom: 60px;
+			}
+		}
+		&-7 {
+			padding: 60px 0;
+			background: #f2f2f2;
+			h2 {
+				font-size: 32px;
+				margin-bottom: 60px;
+			}
+			h4 {
+				font-size: 14px;
+				margin-top: 0;
+				margin-bottom: 10px;
+				font-weight: 700;
+				color: #403e3d;
+				text-align: center;
+			}
+			p {
+				font-size: 14px;
+				color: #403e3d;
+				overflow: hidden;
+				transition:@transition;
+			}
+			a {
+				color: #fff;
+				text-decoration: underline;
+				font-size: 12px;
+			}
+			.item {
+				cursor: pointer;
+				position: relative;
+				overflow: hidden;
+				margin-bottom: 20px;
+				&:hover,&:focus {
+					.item {
+						&-inner {
+							transform: translateX(0);
+							p {
+								height: 120px;
+							}
+							h4 {
+								margin-bottom: 10px;
+							}
+						}
+						&-holder {
+							img {
+								transform: translateY(-10%);
+							}
+						}
+					}
+				}
+				&-holder {
+					transition:@transition;
+					color: #fff;
+					img {
+						transition:@transition;
+						transform: translateY(0%);
+						will-change: transform;
+					}
+				}
+				&-inner {
+					position: absolute;
+					//transform: translateY(100%); 
+					left:0;
+					bottom:0;
+					width: 100%;
+					/*height: 50%;*/
+					background: #d8d8d8;
+					padding: 15px 20px;
+
+					display: flex;
+					transition:@transition;
+					&-holder {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+					}
+					p {
+						height: 0;
+						margin-bottom: 0;
+						will-change: height;
+					}
+					h4 {
+						transition:@transition;
+						margin: 0;
+					}
+					
+				}
+			}
+			button {
+				margin-top: 50px;
+			}
+		}
+		&-8 {
+			padding: 60px 0;
+			h2 {
+				font-size: 32px;
+				margin-bottom: 60px;
+			}
+			img {
+				margin-bottom: 50px;
+			}
+		}
 	}
 }
