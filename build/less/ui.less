@@ -6,6 +6,8 @@
 .btn {
 	&-primary {
 		font-size: 18px;
+		.cl;
+		font-weight: 300;
 		&:hover,&:focus
 		{
 			background: #079fd1;
@@ -15,7 +17,44 @@
 		font-size: 18px;
 		background: #d92528;
 		border-color: #d92528;
-		padding: 15px 25px;
+		padding: 13px 25px;
+		.cl;
+		font-weight: 300;
+	}
+	&-default {
+		padding: 13px 25px;
+		border-color: #cccccc;
+		background-color: #cccccc;
+		.cl;
+		font-weight: 300;
+	}
+	&-arrow {
+		width: 52px;
+		height: 52px;
+		border-radius: 3px;
+		background: url(../img/icons/arrow-btn.png) transparent center center no-repeat;
+		&:hover,&:focus {
+			background: url(../img/icons/arrow-btn-hover.png) #cccccc center center no-repeat;
+		}
+	}
+}
+.form-control {
+	border-radius: 0;
+	background: #fff;
+	box-shadow: none !important;
+	border-color:#e0e0e0;
+	.cl;
+	font-weight: 300;
+	&:focus {
+		box-shadow: none;
+	}
+}
+.has-error .form-control {
+	border-color: #d92528;
+	color: #d92528;
+	&:focus {
+		border-color: #d92528;
+		color: #d92528;
 	}
 }
 .ghost {
@@ -29,5 +68,20 @@
 		color: #d92528;
 		padding: 15px 25px;
 		border-color: #d92528;
+		&.disabled {
+			background: 0 0;
+			color: #d92528;
+			padding: 15px 25px;
+			border-color: #d92528;
+			&:hover,&:focus {
+				color: #fff;
+				background: #d92528;
+			}
+		}
+	}
+	&-default {
+		background-color: transparent;
+		border-color: #cccccc;
+		padding: 15px 25px;
 	}
 }
