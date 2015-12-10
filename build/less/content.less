@@ -324,6 +324,9 @@
 			}
 		}
 		&-9{
+			.my-flex {
+				align-items: flex-end;
+			}
 			padding: 60px 0 40px;
 			background: #f2f2f2;
 			h2 {
@@ -336,12 +339,13 @@
 				display: table;
 				border: 1px solid #e0e0e0;
 				background: #fff;
-				padding: 40px 45px;
+				padding: 35px 45px 35px;
 				width: 100%;
 				button {
 					width: 100%;
 					padding-top: 10px;
 					padding-bottom: 10px;
+					margin-top: 10px;
 				}
 				p {
 					font-size: 22px;
@@ -363,6 +367,120 @@
 				}
 				textarea {
 					resize: vertical;
+				}
+			}
+			.text-holder {
+				padding-left: 30px;
+				.contact {
+					font-size: 22px;
+					p,a {
+						text-decoration: none;
+						color: #079fd1;
+						.cl;
+						font-weight: 300;
+						&:hover,&:focus {
+							text-decoration: none;
+						}
+					}
+					.until-time {
+						font-size: 13px;
+						margin-top: -10px;
+						color: #919496;
+						margin-bottom: 50px;
+					}
+				}
+				.map {
+					display: flex;
+					align-items: center;
+					&>div:nth-child(1) {
+						padding-right: 5px;
+					}
+					.from {
+						display: flex;
+						&>div:nth-child(2) {
+							padding-left: 5px;
+						}
+						&>div:nth-child(1) {
+							padding-top: 2px;
+						}
+					}
+					p {
+						font-size: 	22px;
+						color: #d92528;
+						.cl;
+						line-height: 1;
+						margin-bottom: 5px;
+						font-weight: 300;
+					}
+					a {
+						.cl;
+						font-weight: 300;
+						color: #079fd1;
+					}
+				}
+				.subscribe {
+					p {
+						font-size: 13px;
+						margin-bottom: 5px;
+						.cl;
+						font-weight: 300;
+					}
+					input {
+						height: 32px;
+						border-right: none;
+						border-color: #e0e0e0;
+					}
+					button {
+						width: 32px;
+						background: url(../img/icons/arrow-right.png) #fff center center no-repeat;
+						height: 32px;
+						border-left: none;
+						border-color: #e0e0e0;
+						border-right: 1px solid #e0e0e0;
+						&:hover,&:focus {
+							outline: none;
+							border-left: none;
+							box-shadow: none;
+						}
+					}
+					form {
+						max-width: 280px;
+					}
+					.form-group {
+						margin-bottom: 0;
+					}
+				}
+				.social {
+					margin: 45px 0 35px;
+					display: flex;
+					div {
+						margin-right: 20px;
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+					a{
+						.cls-1 {
+							transition: @transition;
+							fill-opacity: 0;
+							stroke: #079fd1;
+							stroke-linejoin: round;
+							stroke-width: 1px;
+						}
+						.cls-2 {
+							fill: #079fd1;
+							fill-rule: evenodd;
+						}
+						&:hover,&:focus {
+							.cls-1 {
+								fill-opacity: 1;
+								fill:#079fd1;
+							}
+							.cls-2 {
+								fill:#fff;
+							}
+						}
+					}
 				}
 			}
 		}
