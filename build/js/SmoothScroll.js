@@ -11,9 +11,9 @@
 var defaultOptions = {
 
     // Scrolling Core
-    frameRate        : 150, // [Hz]
-    animationTime    : 400, // [px]
-    stepSize         : 120, // [px]
+    frameRate        : 550, // [Hz]
+    animationTime    : 800, // [px]
+    stepSize         : 320, // [px]
 
     // Pulse (less tweakable)
     // ratio of "tail" to "acceleration"

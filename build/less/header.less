@@ -29,11 +29,12 @@
 				}
 			}
 			.tel {
+				transition: @transition;
 				color: #fff;
 				font-size: 15px;
 				display: inline-block;
 				margin: 10px 0 0;
-				text-decoration: none;
+				
 				&:hover,&:focus {
 					text-decoration: none;
 					color: #d92528;
@@ -48,15 +49,15 @@
 		display: table;
 		width: 118px;
 		&:hover,&:focus {
-			.st0 {
+			.st1 {
 				fill:#DA2727;
 			}
 		}
 		svg {
-			.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;transition:@transition;}
-			.st1{fill:#FFFFFF;transition:@transition;}
-			.st2{fill-rule:evenodd;clip-rule:evenodd;transition:@transition;}
-			.st3{transition:@transition;}
+		.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;transition:@transition;}
+		.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;transition:@transition;}
+		.st2{fill:#FFFFFF;transition:@transition;}
+		.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;transition:@transition;}
 		}
 	}
 	.nav.navbar-nav {

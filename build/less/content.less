@@ -196,7 +196,7 @@ body {
 				}
 				&-inner {
 					position: absolute;
-					transform: translateY(100%); 
+					transform: translateY(0%); 
 					left:0;
 					bottom:0;
 					width: 100%;
@@ -272,10 +272,11 @@ body {
 					transform:translateY(-100px);
 					width: 100%;
 				}
+
 			}
 			.form-holder {
 				display: table;
-				padding: 15px 45px 15px;
+				padding: 15px 35px 15px;
 				width: 100%;
 				button {
 					width: 100%;
@@ -284,7 +285,7 @@ body {
 					margin-top: 10px;
 					background: #d92528;
 					color: #fff;
-					&:hover,&:focus {
+					&:hover {
 						background: #fff;
 						color: #d92528;
 						border-color: #d92528;
@@ -292,9 +293,11 @@ body {
 				}
 				input {
 					background: 0 0;
+					color :#fff;
 				}
 				p {
-					font-size: 18px;
+					font-size: 24px;
+					line-height: 1;
 					.cl;
 					font-weight: 300;
 					text-align: left;
@@ -385,6 +388,7 @@ body {
 						&-holder {
 							img {
 								transform: translateY(-10%);
+								opacity: .7;
 							}
 						}
 					}
@@ -395,6 +399,7 @@ body {
 					img {
 						transition:@transition;
 						transform: translateY(0%);
+						opacity: 1;
 						will-change: transform;
 					}
 				}
@@ -557,7 +562,7 @@ body {
 						border-left: none;
 						border-color: #e0e0e0;
 						border-right: 1px solid #e0e0e0;
-						&:hover,&:focus {
+						&:hover {
 							outline: none;
 							border-left: none;
 							box-shadow: none;

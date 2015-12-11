@@ -8,9 +8,14 @@
 		font-size: 18px;
 		.cl;
 		font-weight: 300;
-		&:hover,&:focus
+		&:hover
 		{
 			background: #079fd1;
+		}
+		&:focus {
+			font-size: 18px;
+			.cl;
+			font-weight: 300;
 		}
 	}
 	&-danger {
@@ -20,6 +25,18 @@
 		padding: 13px 25px;
 		.cl;
 		font-weight: 300;
+		&:hover {
+			background: #fff;
+			color: #d92528;
+		}
+		&:focus {
+			font-size: 18px;
+			background: #d92528;
+			border-color: #d92528;
+			padding: 13px 25px;
+			.cl;
+			font-weight: 300;
+		}
 	}
 	&-default {
 		padding: 13px 25px;
@@ -27,14 +44,27 @@
 		background-color: #cccccc;
 		.cl;
 		font-weight: 300;
+		&:focus {
+			padding: 13px 25px;
+			border-color: #cccccc;
+			background-color: #cccccc;
+			.cl;
+			font-weight: 300;
+		}
 	}
 	&-arrow {
 		width: 52px;
 		height: 52px;
 		border-radius: 3px;
 		background: url(../img/icons/arrow-btn.png) transparent center center no-repeat;
-		&:hover,&:focus {
+		&:hover {
 			background: url(../img/icons/arrow-btn-hover.png) #cccccc center center no-repeat;
+		}
+		&:focus {
+			width: 52px;
+			height: 52px;
+			border-radius: 3px;
+			background: url(../img/icons/arrow-btn.png) transparent center center no-repeat;
 		}
 	}
 }
@@ -62,6 +92,11 @@
 		background: rgba(0,0,0,.3);
 		color: #079fd1;
 		padding: 15px 25px;
+		&:focus {
+			background: rgba(0,0,0,.3);
+			color: #079fd1;
+			padding: 15px 25px;
+		}
 	}
 	&-danger {
 		background: 0 0;
@@ -73,9 +108,15 @@
 			color: #d92528;
 			padding: 15px 25px;
 			border-color: #d92528;
-			&:hover,&:focus {
+			&:hover {
 				color: #fff;
 				background: #d92528;
+			}
+			&:focus {
+				background: 0 0;
+				color: #d92528;
+				padding: 15px 25px;
+				border-color: #d92528;
 			}
 		}
 	}
@@ -83,6 +124,11 @@
 		background-color: transparent;
 		border-color: #cccccc;
 		padding: 15px 25px;
+		&:focus {
+			background-color: transparent;
+			border-color: #cccccc;
+			padding: 15px 25px;
+		}
 	}
 }
 /*offcanvas*/
@@ -108,7 +154,7 @@
 		text-align: left;
 		border-radius: 0;
 		font-size: 12px;
-		&:hover,&:focus {
+		&:hover {
 			color: #fff;
 			background: 0 0;
 			box-shadow: none;

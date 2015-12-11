@@ -9,8 +9,10 @@ $(document).ready(function() {
 			scrollTop: $( $.attr(this, 'href') ).offset().top - 80
 		}, 1000);
 		return false;
-
 	});
+	if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+		$('input[type=tel]').mask("+7 (999) 999-99-99");
+	}
 	$('[data-target="show"]').click(function(e){
 		$('.work').removeClass('hidden');
 		$(this).addClass('hidden');
