@@ -4,18 +4,331 @@
 }
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-	
+	.content.block-1 h2 {
+		padding: 0 50px;
+	}
+	.header-lvl-1 .tel {
+		font-size: 14px;
+	}
+	.header-lvl-1 .tel,
+	.header .nav.navbar-nav {
+		margin: 13px 0 0;
+	}
+	.content.block-1 {
+		min-height: 600px;
+	}
+	.content.block-4 .item:hover .item-holder img {
+		transform: translateY(-18px);
+	}
+	.content.block-4 .item-inner {
+		height: 70%;
+	}
+	.content.block-5 .form-holder p {
+		display: none;
+	}
+	.content.block-5 .form-inner {
+		top:115px;
+	}
+	.content.block-5 .form-inner {
+		right: 0;
+	}
+	.content.block-6 .holder .anim {
+		right: 160px;
+	}
+	.content.block-9 .text-holder .contact {
+		font-size: 21px;
+	}
+	.content.block-10 .holder {
+		height: 140px;
+	}
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-	
+	.content.block-1 h2 {
+		font-size: 32px;
+		padding: 0 0px;
+	}
+	.header-lvl-1 .tel,
+	.header-lvl-1 ul li a {
+		font-size: 13px;
+	}
+	.header-lvl-1 .tel {
+		margin-left: -25px;
+	}
+	.header-lvl-1 .tel,
+	.header .nav.navbar-nav {
+		margin-top: 15px;
+	}
+	.content.block-1 {
+		min-height: 500px;
+	}
+	.content.block-2 h2 {
+		font-size: 24px;
+	}
+	.content.block-3 h3 {
+		font-size: 16px;
+	}
+	.content.block-4 .item:hover .item-holder img {
+		transform: translateY(-18px);
+	}
+	.content.block-4 .item-inner {
+		height: 70%;
+	}
+	.content.block-5 .form-holder p {
+		display: none;
+	}
+	.content.block-5 .form-inner {
+		top: 115 - 30px;
+		right: 0;
+		.form-group {
+			margin-bottom: 5px;
+		}
+	}
+	.content.block-5 .form-holder button {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 5px;
+		font-size: 14px;
+	}
+	.content.block-5 {
+		padding: 30px 0;
+	}
+	.content.block-5 h2 {
+		margin-bottom: 30px;
+	}
+	.content.block-6 .holder .anim {
+	    position: absolute;
+	    right: 150px;
+	    top: 80px;
+	    width: 60px;
+	}
+	.content.block-10 .holder {
+		height: 103px;
+	}
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 767px) {
-	
+	.header-lvl-1 {
+		padding: 5px 0;
+	}
+	.navbar-toggle {
+		border-color: #fff;
+		.icon-bar {
+			background: #fff;
+		}
+	}
+	.content.block-1 h2 {
+		padding: 0;
+		font-size: 21px;
+	}
+	.content.block-1 h2 span {
+		font-size: 12px;
+		padding: 5px 7px;
+	}
+	.content.block-1 {
+		min-height: 400px;
+	}
+	.content.block-1 .btn-arrow {
+		display: none;
+	}
+	.content.block-4 .item {
+		max-width: 320px;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content.block-4 button {
+		max-width: 260px;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content.block-5{ 
+		img {
+			display: none !important;
+		}
+	}
+	.content.block-5 h2 {
+		font-size: 21px;
+	}
+	.content.block-5 .form-inner,
+	.content.block-5.anim .form-inner {
+		position: static;
+		trasform:translateY(0) !important;
+		
+		transition-delay: 0s;
+		text-align: center;
+	}
+	.content.block-5 .form-holder p {
+		text-align: center;
+	}
+	.content.block-5 .form-holder .form-group {
+		text-align: left;
+	}
+	.content.block-6 .holder .anim {
+		display: none;
+	}
+	.content.block-5 h2 {
+		margin-bottom: 10px;
+	}
+	.content.block-5 {
+		padding: 10px 0;
+	}
+	.content.block-8 img {
+		width: auto;
+		display: table;
+		.center-block;
+	}
+	.content.block-9 .my-flex {
+		display: block !important;
+	}
+
+	.content.block-9 .text-holder .contact {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.content.block-9 .text-holder .social,
+	.content.block-9 .text-holder .map {
+		justify-content: center;
+	}
+	.content.block-9 .text-holder .subscribe form {
+		display: table;
+		.center-block;
+	}
+	.content.block-9 .text-holder .subscribe p {
+		text-align: center;
+	}
+	.footer-lvl-1 .logo {
+		margin-right: 0;
+	}
+	.content.block-9 .text-holder {
+		padding-left: 0;
+	}
 }
 
 @media (min-width:0px) and (max-width: 479px) {
-	
+	.header-lvl-1 {
+		padding: 5px 0;
+	}
+	.navbar-toggle {
+		border-color: #fff;
+		.icon-bar {
+			background: #fff;
+		}
+	}
+	.content.block-1 h2 {
+		padding: 0;
+		font-size: 21px;
+	}
+	.content.block-1 h2 span {
+		font-size: 12px;
+		padding: 5px 7px;
+	} 
+	.content.block-1 {
+		min-height: 400px;
+	}
+	.content.block-1 .btn-arrow {
+		display: none;
+	}
+	.content.block-4 .item {
+		max-width: 320px;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content.block-4 button {
+		max-width: 260px;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content.block-5{ 
+		img {
+			display: none !important;
+		}
+	}
+	.content.block-5 h2 {
+		font-size: 21px;
+	}
+	.content.block-5 .form-inner,
+	.content.block-5.anim .form-inner {
+		position: static;
+		trasform:translateY(0) !important;
+		
+		transition-delay: 0s;
+		text-align: center;
+	}
+	.content.block-5 .form-holder p {
+		text-align: center;
+	}
+	.content.block-5 .form-holder .form-group {
+		text-align: left;
+	}
+	.content.block-6 .holder .anim {
+		display: none;
+	}
+	.content.block-5 h2 {
+		margin-bottom: 10px;
+	}
+	.content.block-5 {
+		padding: 10px 0;
+	}
+	.content.block-8 img {
+		width: auto;
+		display: table;
+		.center-block;
+	}
+	.content.block-9 .my-flex {
+		display: block !important;
+	}
+
+	.content.block-9 .text-holder .contact {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.content.block-9 .text-holder .social,
+	.content.block-9 .text-holder .map {
+		justify-content: center;
+	}
+	.content.block-9 .text-holder .subscribe form {
+		display: table;
+		.center-block;
+	}
+	.content.block-9 .text-holder .subscribe p {
+		text-align: center;
+	}
+	.footer-lvl-1 .logo {
+		margin-right: 0;
+	}
+	.footer p {
+		font-size: 10px;
+	}
+	.content.block-3 h3 {
+		font-size: 16px;
+	}
+	body .ghost-primary {
+		font-size: 14px;
+		padding: 12px 14px;
+	}
+	.content.block-2 h2 {
+		font-size: 21px;
+	}
+	.content.block-5 .form-holder {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.content.block-8,
+	.content.block-7 {
+		padding-top: 10px;
+	}
+	.content.block-9 .form-holder {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 5px;
+		padding-top: 15px;
+	}
+	.content.block-9 .text-holder {
+		padding-left: 0;
+	}
 }

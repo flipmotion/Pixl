@@ -85,3 +85,158 @@
 		padding: 15px 25px;
 	}
 }
+/*offcanvas*/
+.offcanvas {
+	transition:@transition;
+	position: fixed;
+	z-index: 10;
+	right: -280px;
+	width: 280px;
+	top:0;
+	bottom:0;
+	background: #ededed;
+	.line {
+		margin: 10px -20px;
+	}
+	&-btn {
+		background: 0 0;
+		border: none;
+		box-shadow: none;
+		height: 50px;
+		width: 50px;
+		padding-left: 20px;
+		text-align: left;
+		border-radius: 0;
+		font-size: 12px;
+		&:hover,&:focus {
+			color: #fff;
+			background: 0 0;
+			box-shadow: none;
+		}
+		&:active{
+			color: #fff;
+			background: 0 0;
+			box-shadow: none;
+		}
+	}
+	&-header {
+		height: 50px;
+		background: rgba(0,0,0,1);
+		color: #fff;
+		h3 {
+			
+			margin: auto;
+			font-size: 14px;
+			text-align: center;
+			text-indent: -50px;
+		}
+		.my-flex {
+			align-items: center;
+			&>div:nth-child(2) {
+				flex-grow: 1;
+			}
+		}
+	}
+	@offset-footer: 140px;/*this offset margin+padding for height footer*/
+	&-body {
+		background: #fff;
+		height: calc(~'100% - 50px');
+		width: 100%;
+		overflow: hidden;
+		padding-bottom: @offset-footer;
+		padding: 0px 0px @offset-footer + 25px;
+		.viewport-menu {
+			overflow: auto;
+			width: calc(~'100% + 20px');
+			height: 100%;
+		}
+		&-item {
+			display: flex;
+			padding: 15px 20px;
+			margin-bottom: -15px;
+			&:hover,&:focus {
+				background: #efefef;
+				.item-delete {
+					opacity: 1;
+				}
+			}
+			a {
+				display: block;
+				color: #333;
+				font-size: 12px;
+				text-transform: uppercase;
+				&:hover,&:focus {
+					text-decoration: none;
+				}
+			}
+			.item {
+				/*some style for items*/
+			}
+		}
+	}
+	&-footer {
+		background: #fff;
+		height: @offset-footer;
+		margin-top:  -@offset-footer;
+		padding: 0 20px;
+		h3 {
+			margin: 0;
+		}
+		&-lvl {
+			&-1 {
+				padding: 10px 0 10px;
+			}
+		}
+		&-lvl {
+			&-2 {
+				padding: 10px 0 10px;
+			}
+		}
+		.tel {
+			color: #333;
+			display: table;
+			.center-block;
+		}
+		.social {
+			display: flex !important;
+			justify-content: space-around;
+			div {
+				flex-grow:1;
+				text-align: center;
+			}
+			a{
+				.cls-1 {
+					transition: @transition;
+					fill-opacity: 0;
+					stroke: #079fd1;
+					stroke-linejoin: round;
+					stroke-width: 1px;
+				}
+				.cls-2 {
+					fill: #079fd1;
+					fill-rule: evenodd;
+				}
+				&:hover,&:focus {
+					.cls-1 {
+						fill-opacity: 1;
+						fill:#079fd1;
+					}
+					.cls-2 {
+						fill:#fff;
+					}
+				}
+			}
+			&>div:nth-child(3) {
+				img {
+					margin-right: 0;
+				}
+			}
+			&>div:nth-child(1) {
+				img {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+/*offcanvas END*/

@@ -4,23 +4,40 @@ $(document).ready(function() {
 	/*scroll spy END*/
 	/*smooth links */
 	$('a.smooth').click(function(){
+		$('html').removeClass('nav-active');
 		$('html, body').animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top - 80
 		}, 1000);
 		return false;
+
 	});
+	$('[data-target="show"]').click(function(e){
+		$('.work').removeClass('hidden');
+		$(this).addClass('hidden');
+	});
+	$('[data-item="offcanvas-menu"]').click(function(event){
+    	$('html').toggleClass('nav-active');
+    	event.preventDefault();
+    });
+    $('.close-nav').click(function(event){
+    	$('html').toggleClass('nav-active');
+    	event.preventDefault();
+    });
 	/*smooth links END*/
 	/*animation when scrolling*/
-	// $('.anim-el').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-	// 	if (isInView) {
-	// 		// element is now visible in the viewport
-	// 	$(this).addClass('in-view');
-	// 	$('.content.block-1 .holder-img').addClass('anim');
-	// 	} else {
-	// 		$(this).removeClass('in-view');
-	// 		$('.content.block-1 .holder-img').removeClass('anim');
-	// 	}
-	// });
+	$('.trigger').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		var that = 'assets/img/pacman.gif';
+		if (isInView) {
+			// element is now visible in the viewport
+			$(this).addClass('in-view');
+			$('.content.block-5').addClass('anim');
+			$('.show-anim').attr('src', that);
+		} else {
+			$(this).removeClass('in-view');
+			$('.content.block-5').removeClass('anim');
+			$('.show-anim').attr('src', '');
+		}
+	});
 	/*animation when scrolling*/
 
 	var owlMain = $('[data-item="slider-item"]');

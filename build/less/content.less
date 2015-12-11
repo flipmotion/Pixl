@@ -1,3 +1,30 @@
+.nav-active {
+	//transform: translateX(-320px);
+	body {
+		right: 280px;
+	}
+	.offcanvas{
+		right: 0;
+	}
+	.close-nav {
+		position: fixed;
+		top:0;
+		width: 100%;
+		right: 0;
+		bottom: 0;
+		bottom:0;
+		background: rgba(0,0,0,.3);
+		z-index: 9;
+	}
+	.header {
+		left: -280px;
+	}
+}
+body {
+	transition: @transition;
+	right: 0;
+	position: relative;
+}
 .content {
 	&.block {
 		&-1 {
@@ -199,11 +226,95 @@
 			padding: 60px 0;
 			background: #000;
 			color: #fff;
+			position: relative;
 			h2 {
 				font-size: 32px;
 				margin-bottom: 60px;
 				.cl;
 				font-weight: 300;
+			}
+			&.anim {
+				.show-anim {
+					display: block;
+				}
+				.form-inner{
+					opacity: 1;
+					visibility: visible;
+					transition-delay: 11s;
+					transform:translateY(0);
+				}
+				.show-state {
+					display: none;
+				}
+			}
+			.show-anim {
+				display: none;
+			}
+			.my-container {
+				//width: 100%;
+			}
+			.form {
+				position: relative;
+				.trigger {
+					position: absolute;
+					height: 1px;
+					top:60%;
+					width: 100%;
+					left:0;
+				}
+				&-inner {
+					position: absolute;
+					opacity: 0;
+					visibility: hidden;
+					transition: @transition;
+					top: 135px;
+					right: 70px;
+					transform:translateY(-100px);
+					width: 100%;
+				}
+			}
+			.form-holder {
+				display: table;
+				padding: 15px 45px 15px;
+				width: 100%;
+				button {
+					width: 100%;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					margin-top: 10px;
+					background: #d92528;
+					color: #fff;
+					&:hover,&:focus {
+						background: #fff;
+						color: #d92528;
+						border-color: #d92528;
+					}
+				}
+				input {
+					background: 0 0;
+				}
+				p {
+					font-size: 18px;
+					.cl;
+					font-weight: 300;
+					text-align: left;
+					margin-bottom: -10px;
+				}
+				label {
+					.cl;
+					font-weight: 300;
+					color: #919496;
+				}
+				.help-block {
+					display: none;
+					visibility: hidden;
+					height: 0;
+					overflow: hidden;
+					opacity: 0;
+				}
+				textarea {
+					resize: vertical;
+				}
 			}
 		}
 		&-6 {
@@ -213,6 +324,15 @@
 				margin-bottom: 60px;
 				.cl;
 				font-weight: 300;
+			}
+			.holder {
+				position: relative;
+				.anim {
+					position: absolute;
+					right: 240px;
+					top: 80px;
+					width: auto;
+				}
 			}
 		}
 		&-7 {

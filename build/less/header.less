@@ -1,4 +1,7 @@
 .header {
+	transition: @transition;
+	width: 100%;
+	left: 0;
 	&-lvl {
 		&-1 {
 			background: rgba(0,0,0,.7);
@@ -40,6 +43,21 @@
 	}
 	&.fix-header {
 		
+	}
+	.logo {
+		display: table;
+		width: 118px;
+		&:hover,&:focus {
+			.st0 {
+				fill:#DA2727;
+			}
+		}
+		svg {
+			.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;transition:@transition;}
+			.st1{fill:#FFFFFF;transition:@transition;}
+			.st2{fill-rule:evenodd;clip-rule:evenodd;transition:@transition;}
+			.st3{transition:@transition;}
+		}
 	}
 	.nav.navbar-nav {
 		float: none;
